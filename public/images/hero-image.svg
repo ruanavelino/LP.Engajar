@@ -1,0 +1,59 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Shapes -->
+  <path d="M520 100C544.3 100 564 80.3 564 56C564 31.7 544.3 12 520 12C495.7 12 476 31.7 476 56C476 80.3 495.7 100 520 100Z" fill="#03DAC6" fill-opacity="0.2"/>
+  <path d="M50 330C67.67 330 82 315.67 82 298C82 280.33 67.67 266 50 266C32.33 266 18 280.33 18 298C18 315.67 32.33 330 50 330Z" fill="#6D5DFC" fill-opacity="0.2"/>
+  <path d="M150 50C156.63 50 162 44.63 162 38C162 31.37 156.63 26 150 26C143.37 26 138 31.37 138 38C138 44.63 143.37 50 150 50Z" fill="#6D5DFC" fill-opacity="0.3"/>
+  <path d="M400 370C406.63 370 412 364.63 412 358C412 351.37 406.63 346 400 346C393.37 346 388 351.37 388 358C388 364.63 393.37 370 400 370Z" fill="#03DAC6" fill-opacity="0.3"/>
+  
+  <!-- Devices Frame -->
+  <rect x="120" y="50" width="360" height="300" rx="10" fill="#FFFFFF" stroke="#333333" stroke-width="2"/>
+  <rect x="140" y="80" width="320" height="240" rx="4" fill="#F5F5F7"/>
+  
+  <!-- Charts and Data Visualization -->
+  <rect x="150" y="100" width="140" height="100" rx="4" fill="white" stroke="#E0E0E0"/>
+  <path d="M160 160L190 130L220 150L250 120L280 140" stroke="#6D5DFC" stroke-width="2" stroke-linecap="round"/>
+  <path d="M160 180C160 180 180 170 190 170C200 170 210 190 230 190C250 190 260 160 280 160" stroke="#03DAC6" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="190" cy="130" r="4" fill="#6D5DFC"/>
+  <circle cx="220" cy="150" r="4" fill="#6D5DFC"/>
+  <circle cx="250" cy="120" r="4" fill="#6D5DFC"/>
+  <circle cx="280" cy="140" r="4" fill="#6D5DFC"/>
+  
+  <!-- Social Media Icons -->
+  <rect x="310" y="100" width="140" height="100" rx="4" fill="white" stroke="#E0E0E0"/>
+  <circle cx="340" cy="130" r="15" fill="#6D5DFC" fill-opacity="0.2"/>
+  <path d="M340 125V135M335 130H345" stroke="#6D5DFC" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="380" cy="130" r="15" fill="#03DAC6" fill-opacity="0.2"/>
+  <path d="M375 130H385M380 125V135" stroke="#03DAC6" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="420" cy="130" r="15" fill="#6D5DFC" fill-opacity="0.2"/>
+  <path d="M415 130C415 130 417 127 420 127C423 127 425 130 425 130M415 134H425" stroke="#6D5DFC" stroke-width="2" stroke-linecap="round"/>
+  
+  <rect x="340" y="160" width="80" height="10" rx="2" fill="#6D5DFC" fill-opacity="0.3"/>
+  <rect x="340" y="180" width="60" height="10" rx="2" fill="#03DAC6" fill-opacity="0.3"/>
+  
+  <!-- Campaign Data -->
+  <rect x="150" y="220" width="300" height="80" rx="4" fill="white" stroke="#E0E0E0"/>
+  <circle cx="180" cy="250" r="20" fill="#6D5DFC" fill-opacity="0.2"/>
+  <text x="180" y="255" font-family="Arial" font-size="16" fill="#6D5DFC" text-anchor="middle">+80%</text>
+  <rect x="210" y="235" width="100" height="10" rx="2" fill="#333333" fill-opacity="0.8"/>
+  <rect x="210" y="255" width="80" height="10" rx="2" fill="#767676"/>
+  
+  <circle cx="350" cy="250" r="20" fill="#03DAC6" fill-opacity="0.2"/>
+  <text x="350" y="255" font-family="Arial" font-size="16" fill="#03DAC6" text-anchor="middle">+65%</text>
+  <rect x="380" y="235" width="60" height="10" rx="2" fill="#333333" fill-opacity="0.8"/>
+  <rect x="380" y="255" width="40" height="10" rx="2" fill="#767676"/>
+  
+  <!-- Connection Lines -->
+  <path d="M300 80L300 320" stroke="#E0E0E0" stroke-dasharray="4 4"/>
+  <path d="M140 200L460 200" stroke="#E0E0E0" stroke-dasharray="4 4"/>
+  
+  <!-- Gradient Overlay -->
+  <rect x="120" y="50" width="360" height="300" rx="10" fill="url(#paint0_linear)" fill-opacity="0.05"/>
+  
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="120" y1="50" x2="480" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6D5DFC"/>
+      <stop offset="1" stop-color="#03DAC6"/>
+    </linearGradient>
+  </defs>
+</svg> 

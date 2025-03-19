@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serviço de Análise de Dados - Transformamos dados em insights estratégicos para potencializar suas decisões de marketing e aumentar seus resultados">
+    <meta name="keywords" content="análise de dados, business intelligence, BI, marketing analytics, dados, métricas, conversão, tomada de decisão">
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>LP Engajar | Análise de Dados</title>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">LP Engajar</a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../index.html#servicos">Serviços</a></li>
+                <li><a href="../index.html#cases">Cases</a></li>
+                <li><a href="../index.html#faq">FAQ</a></li>
+                <li><a href="../index.html#contato" class="btn btn-primary">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da Página de Serviço -->
+    <header class="service-header">
+        <div class="container">
+            <div class="service-header-content">
+                <div class="service-icon-large">
+                    <img src="../public/images/icon-chart.svg" alt="Ícone de Análise de Dados">
+                </div>
+                <h1>Análise de Dados</h1>
+                <p>Transforme dados brutos em insights estratégicos para tomar decisões mais inteligentes e impulsionar seus resultados</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Detalhes do Serviço -->
+    <section class="service-details">
+        <div class="container">
+            <div class="service-details-grid">
+                <div class="service-description">
+                    <h2>Como funciona a Análise de Dados</h2>
+                    <p>Nossa abordagem transforma dados complexos em informações acionáveis, permitindo que você entenda profundamente o comportamento dos seus clientes e otimize suas estratégias de marketing para maximizar o ROI.</p>
+                    
+                    <p>Trabalhamos com três níveis principais de análise:</p>
+                    
+                    <ul class="platforms-list">
+                        <li>
+                            <div class="platform-icon"></div>
+                            <div class="platform-info">
+                                <h4>Análise Descritiva</h4>
+                                <p>Entenda o que está acontecendo em seu negócio através de relatórios detalhados sobre o desempenho atual e passado de suas campanhas e canais.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="platform-icon"></div>
+                            <div class="platform-info">
+                                <h4>Análise Diagnóstica</h4>
+                                <p>Descubra por que determinados resultados estão acontecendo, identificando padrões, correlações e fatores que afetam o desempenho.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="platform-icon"></div>
+                            <div class="platform-info">
+                                <h4>Análise Preditiva</h4>
+                                <p>Preveja tendências futuras e comportamentos dos clientes para antecipar oportunidades e otimizar suas estratégias de marketing.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <h3>Benefícios da Análise de Dados para seu Negócio</h3>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-target.svg" alt="Ícone de Precisão">
+                            </div>
+                            <h4>Precisão nas Decisões</h4>
+                            <p>Tome decisões baseadas em dados concretos, não em suposições.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-money.svg" alt="Ícone de ROI">
+                            </div>
+                            <h4>Otimização de ROI</h4>
+                            <p>Identifique quais canais e estratégias estão gerando os melhores resultados.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-scale.svg" alt="Ícone de Personalização">
+                            </div>
+                            <h4>Personalização</h4>
+                            <p>Segmente seu público com precisão para mensagens mais relevantes.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-speed.svg" alt="Ícone de Agilidade">
+                            </div>
+                            <h4>Agilidade</h4>
+                            <p>Reaja rapidamente às mudanças do mercado com insights em tempo real.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-chart-container">
+                    <h2>Impacto da Análise de Dados nos negócios</h2>
+                    
+                    <div class="chart-info">
+                        <div class="chart-stat">
+                            <h3>23%</h3>
+                            <p>maior ROI em empresas que implementam análise de dados</p>
+                        </div>
+                        <div class="chart-stat">
+                            <h3>35%</h3>
+                            <p>redução média em custos de aquisição de cliente</p>
+                        </div>
+                        <div class="chart-stat">
+                            <h3>47%</h3>
+                            <p>aumento na taxa de conversão com segmentação baseada em dados</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-wrapper">
+                        <canvas id="dataChart"></canvas>
+                    </div>
+                    
+                    <div class="testimonial-box">
+                        <div class="testimonial-content">
+                            <p>"A análise de dados foi um divisor de águas para nossa empresa. Conseguimos identificar um segmento de clientes que estava sendo negligenciado e criamos campanhas específicas que resultaram em um aumento de 68% nas conversões deste grupo. O retorno sobre o investimento foi impressionante."</p>
+                            <div class="testimonial-author">
+                                <img src="../public/images/client-avatar.svg" alt="Avatar do Cliente">
+                                <div>
+                                    <h4>Roberto Silva</h4>
+                                    <p>CMO, Tech Enterprise</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Processo -->
+            <div class="process-section">
+                <h2>Nosso Processo de Trabalho</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Coleta</h3>
+                        <p>Identificação e coleta de dados relevantes de todas as fontes disponíveis.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Processamento</h3>
+                        <p>Limpeza, organização e estruturação dos dados para análise.</p>
+                    </div>
+                    <div class="process-step process-step-active">
+                        <div class="step-number">3</div>
+                        <h3>Análise</h3>
+                        <p>Aplicação de modelos estatísticos e algoritmos para extrair insights.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Visualização</h3>
+                        <p>Criação de dashboards interativos e relatórios visuais.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h3>Ação</h3>
+                        <p>Recomendações estratégicas baseadas nos insights obtidos.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="cta-section">
+                <h2>Pronto para transformar seus dados em resultados?</h2>
+                <p>Solicite uma análise gratuita e descubra como podemos ajudar seu negócio a tomar decisões mais inteligentes e lucrativas.</p>
+                <ul class="contact-benefits">
+                    <li>
+                        <span class="check-icon"></span>
+                        <p>Diagnóstico inicial das suas fontes de dados</p>
+                    </li>
+                    <li>
+                        <span class="check-icon"></span>
+                        <p>Identificação de oportunidades de otimização</p>
+                    </li>
+                    <li>
+                        <span class="check-icon"></span>
+                        <p>Recomendações estratégicas preliminares</p>
+                    </li>
+                </ul>
+                <a href="#contato-form" class="btn btn-primary btn-lg">Solicitar Análise Gratuita</a>
+            </div>
+            
+            <!-- Formulário de Contato -->
+            <div id="contato-form" class="contact-section">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-form-container">
+                            <h2>Entre em contato</h2>
+                            <p>Preencha o formulário abaixo e entraremos em contato em até 24 horas.</p>
+                            <form class="contact-form">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Nome completo" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="tel" placeholder="Telefone" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Empresa">
+                                </div>
+                                <div class="input-group">
+                                    <textarea placeholder="Mensagem" rows="4"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-full">Enviar mensagem</button>
+                            </form>
+                        </div>
+                        <div class="contact-info-container">
+                            <h3>Informações de contato</h3>
+                            <ul class="contact-info">
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <span>contato@lpengajar.com.br</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>(11) 9999-9999</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>São Paulo, SP</span>
+                                </li>
+                            </ul>
+                            <div class="social-media">
+                                <a href="#" target="_blank"><img src="../public/images/icon-instagram.svg" alt="Instagram"></a>
+                                <a href="#" target="_blank"><img src="../public/images/icon-facebook.svg" alt="Facebook"></a>
+                                <a href="#" target="_blank"><img src="../public/images/icon-whatsapp.svg" alt="WhatsApp"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="../index.html">LP Engajar</a>
+                    <p>Transformando visitas em resultados para o seu negócio.</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><img src="../public/images/icon-instagram.svg" alt="Instagram"></a>
+                        <a href="#" target="_blank"><img src="../public/images/icon-facebook.svg" alt="Facebook"></a>
+                        <a href="#" target="_blank"><img src="../public/images/icon-whatsapp.svg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../index.html#servicos">Serviços</a></li>
+                        <li><a href="../index.html#cases">Cases</a></li>
+                        <li><a href="../index.html#faq">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="trafego-pago.html">Tráfego Pago</a></li>
+                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="redes-sociais.html">Redes Sociais</a></li>
+                        <li><a href="analise-dados.html">Análise de Dados</a></li>
+                        <li><a href="email-marketing.html">Email Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo, SP</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@lpengajar.com.br</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2023 LP Engajar. Todos os direitos reservados.</p>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Executar quando o documento estiver pronto
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle mobile menu
+            document.querySelector('.nav-toggle').addEventListener('click', function() {
+                document.querySelector('.nav-menu').classList.toggle('active');
+                this.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on menu items
+            document.querySelectorAll('.nav-menu li a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    document.querySelector('.nav-menu').classList.remove('active');
+                    document.querySelector('.nav-toggle').classList.remove('active');
+                });
+            });
+            
+            // Inicializar transições de página
+            initPageTransitions();
+            
+            // Inicializar o gráfico de dados
+            const ctx = document.getElementById('dataChart').getContext('2d');
+            
+            const chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Taxa de Conversão', 'ROI', 'Custo de Aquisição', 'Retenção de Clientes'],
+                    datasets: [{
+                        label: 'Sem Análise de Dados',
+                        data: [2.1, 3.2, 45, 20],
+                        backgroundColor: 'rgba(220, 220, 220, 0.7)',
+                        borderColor: 'rgba(200, 200, 200, 1)',
+                        borderWidth: 1
+                    }, {
+                        label: 'Com Análise de Dados',
+                        data: [3.9, 5.4, 29, 41],
+                        backgroundColor: 'rgba(109, 93, 252, 0.7)',
+                        borderColor: 'rgba(109, 93, 252, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: 'rgba(200, 200, 200, 0.1)'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                        }
+                    }
+                }
+            });
+        });
+        
+        // Funções de transição entre páginas
+        function initPageTransitions() {
+            // Aplicar classe de transição a todas as seções
+            const sections = document.querySelectorAll('section');
+            sections.forEach((section, index) => {
+                section.style.setProperty('--section-index', index);
+            });
+
+            // Capturar todos os links de navegação internos
+            const internalLinks = document.querySelectorAll('a[href^="/"]:not([target]), a[href^="./"]:not([target]), a[href^="../"]:not([target]), a[href^="#"]:not([target])');
+            
+            internalLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Não aplicar a transição para links de âncora na mesma página
+                    if (this.getAttribute('href').startsWith('#')) {
+                        return;
+                    }
+                    
+                    // Prevenir o comportamento padrão
+                    e.preventDefault();
+                    
+                    const targetHref = this.getAttribute('href');
+                    
+                    // Adicionar classe de fade-out ao body
+                    document.body.classList.add('fade-out');
+                    
+                    // Após a transição, navegar para a página destino
+                    setTimeout(() => {
+                        window.location.href = targetHref;
+                    }, 300); // O mesmo tempo que a duração da transição CSS
+                });
+            });
+            
+            // Remover classe fade-out ao carregar a página
+            document.body.classList.remove('fade-out');
+        }
+    </script>
+</body>
+</html> 

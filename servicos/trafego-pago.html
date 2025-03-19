@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serviço de Tráfego Pago - Estratégias avançadas para anúncios online que geram conversões e maximizam o retorno sobre investimento">
+    <meta name="keywords" content="tráfego pago, Google Ads, Meta Ads, campanhas digitais, mídia paga, PPC, remarketing, ROI">
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>LP Engajar | Tráfego Pago</title>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">LP Engajar</a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../index.html#servicos">Serviços</a></li>
+                <li><a href="../index.html#cases">Cases</a></li>
+                <li><a href="../index.html#faq">FAQ</a></li>
+                <li><a href="../index.html#contato" class="btn btn-primary">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da Página de Serviço -->
+    <header class="service-header">
+        <div class="container">
+            <div class="service-header-content">
+                <div class="service-icon-large">
+                    <img src="../public/images/icon-traffic.svg" alt="Tráfego Pago">
+                </div>
+                <h1>Gestão de Tráfego Pago</h1>
+                <p>Potencialize seu negócio com estratégias avançadas de anúncios online.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Detalhes do Serviço -->
+    <section class="service-details">
+        <div class="container">
+            <div class="service-details-grid">
+                <div class="service-description">
+                    <h2>Como funciona?</h2>
+                    <p>A gestão de tráfego pago é uma estratégia de marketing digital que consiste na criação, otimização e gerenciamento de campanhas de anúncios em plataformas como Google Ads, Facebook Ads e Instagram Ads.</p>
+                    <p>Nossa equipe de especialistas cuida de todo o processo, desde a criação dos anúncios até a análise de resultados e otimização contínua para garantir o melhor retorno sobre o investimento.</p>
+                    
+                    <h3>Nossas plataformas</h3>
+                    <ul class="platforms-list">
+                        <li>
+                            <span class="platform-icon google"></span>
+                            <div class="platform-info">
+                                <h4>Google Ads</h4>
+                                <p>Anúncios na rede de pesquisa e display do Google para captar clientes ativamente buscando por seus produtos ou serviços.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="platform-icon facebook"></span>
+                            <div class="platform-info">
+                                <h4>Facebook Ads</h4>
+                                <p>Campanhas segmentadas para atingir seu público-alvo de acordo com interesses, comportamentos e dados demográficos.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="platform-icon instagram"></span>
+                            <div class="platform-info">
+                                <h4>Instagram Ads</h4>
+                                <p>Anúncios visuais para aumentar o engajamento e conversões em uma das redes sociais mais populares do mundo.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <h3>Benefícios</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-target.svg" alt="Segmentação">
+                            </div>
+                            <h4>Segmentação precisa</h4>
+                            <p>Alcance exatamente o público que tem maior probabilidade de se converter em cliente.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-speed.svg" alt="Resultados rápidos">
+                            </div>
+                            <h4>Resultados rápidos</h4>
+                            <p>Diferente de estratégias orgânicas, o tráfego pago pode gerar resultados imediatos.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-money.svg" alt="ROI">
+                            </div>
+                            <h4>ROI mensurável</h4>
+                            <p>Acompanhe precisamente o retorno sobre cada real investido nas campanhas.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-scale.svg" alt="Escalabilidade">
+                            </div>
+                            <h4>Escalabilidade</h4>
+                            <p>Aumente ou diminua seus investimentos de acordo com a performance e suas necessidades.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-chart-container">
+                    <h2>Impacto do Tráfego Pago nos Negócios</h2>
+                    <p>Veja como nossos clientes aumentaram suas vendas após 3 meses de implementação das estratégias de tráfego pago:</p>
+                    
+                    <div class="chart-wrapper">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                    
+                    <div class="chart-info">
+                        <div class="chart-stat">
+                            <h3>+180%</h3>
+                            <p>Aumento médio em vendas</p>
+                        </div>
+                        <div class="chart-stat">
+                            <h3>-40%</h3>
+                            <p>Redução no custo por aquisição</p>
+                        </div>
+                        <div class="chart-stat">
+                            <h3>+230%</h3>
+                            <p>Aumento em leads qualificados</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-box">
+                        <div class="testimonial-content">
+                            <p>"A equipe da Engajar revolucionou nossa estratégia de tráfego pago. Em apenas 2 meses, conseguimos triplicar nossas vendas online com um orçamento apenas 20% maior."</p>
+                            <div class="testimonial-author">
+                                <img src="../public/images/client-avatar.svg" alt="Cliente">
+                                <div>
+                                    <h4>Ricardo Mendes</h4>
+                                    <p>E-commerce de Calçados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-section">
+                <h2>Nosso Processo</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Análise</h3>
+                        <p>Estudo aprofundado do seu negócio, concorrência e público-alvo para identificar as melhores oportunidades.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Estratégia</h3>
+                        <p>Desenvolvimento de um plano personalizado com metas claras e KPIs definidos para cada plataforma.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Implementação</h3>
+                        <p>Criação das campanhas, definição de segmentações e produção de criativos de alto impacto.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Otimização</h3>
+                        <p>Análise contínua de dados para ajustes e melhorias nas campanhas, maximizando resultados.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h3>Relatórios</h3>
+                        <p>Envio de relatórios detalhados com métricas de desempenho e insights para decisões estratégicas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Pronto para impulsionar seu negócio com tráfego pago?</h2>
+                <p>Entre em contato conosco e solicite uma análise gratuita da sua estratégia atual.</p>
+                <ul class="contact-benefits">
+                    <li>
+                        <span class="check-icon"></span>
+                        <p>Análise completa das suas campanhas atuais</p>
+                    </li>
+                    <li>
+                        <span class="check-icon"></span>
+                        <p>Identificação de oportunidades de otimização</p>
+                    </li>
+                    <li>
+                        <span class="check-icon"></span>
+                        <p>Sugestões de estratégias para melhorar resultados</p>
+                    </li>
+                </ul>
+                <a href="#contato-form" class="btn btn-primary btn-lg">Solicitar Análise Gratuita</a>
+            </div>
+            
+            <!-- Formulário de Contato -->
+            <div id="contato-form" class="contact-section">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-form-container">
+                            <h2>Entre em contato</h2>
+                            <p>Preencha o formulário abaixo e entraremos em contato em até 24 horas.</p>
+                            <form class="contact-form">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Nome completo" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="tel" placeholder="Telefone" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Empresa">
+                                </div>
+                                <div class="input-group">
+                                    <textarea placeholder="Mensagem" rows="4"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-full">Enviar mensagem</button>
+                            </form>
+                        </div>
+                        <div class="contact-info-container">
+                            <h3>Informações de contato</h3>
+                            <ul class="contact-info">
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <span>contato@lpengajar.com.br</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>(11) 9999-9999</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>São Paulo, SP</span>
+                                </li>
+                            </ul>
+                            <div class="social-media">
+                                <a href="#" target="_blank"><img src="../public/images/icon-instagram.svg" alt="Instagram"></a>
+                                <a href="#" target="_blank"><img src="../public/images/icon-facebook.svg" alt="Facebook"></a>
+                                <a href="#" target="_blank"><img src="../public/images/icon-whatsapp.svg" alt="WhatsApp"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="../index.html">LP Engajar</a>
+                    <p>Transformando visitas em resultados para o seu negócio.</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><img src="../public/images/icon-instagram.svg" alt="Instagram"></a>
+                        <a href="#" target="_blank"><img src="../public/images/icon-facebook.svg" alt="Facebook"></a>
+                        <a href="#" target="_blank"><img src="../public/images/icon-whatsapp.svg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../index.html#servicos">Serviços</a></li>
+                        <li><a href="../index.html#cases">Cases</a></li>
+                        <li><a href="../index.html#faq">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="trafego-pago.html">Tráfego Pago</a></li>
+                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="redes-sociais.html">Redes Sociais</a></li>
+                        <li><a href="analise-dados.html">Análise de Dados</a></li>
+                        <li><a href="email-marketing.html">Email Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo, SP</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@lpengajar.com.br</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2023 LP Engajar. Todos os direitos reservados.</p>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/utils/main.js"></script>
+    <script>
+        // Executar quando o documento estiver pronto
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle mobile menu
+            document.querySelector('.nav-toggle').addEventListener('click', function() {
+                document.querySelector('.nav-menu').classList.toggle('active');
+                this.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on menu items
+            document.querySelectorAll('.nav-menu li a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    document.querySelector('.nav-menu').classList.remove('active');
+                    document.querySelector('.nav-toggle').classList.remove('active');
+                });
+            });
+            
+            // Inicializar transições de página
+            initPageTransitions();
+        });
+        
+        // Gráfico de vendas
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('salesChart').getContext('2d');
+            
+            const salesChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Mês 1', 'Mês 2', 'Mês 3', 'Mês 4', 'Mês 5', 'Mês 6'],
+                    datasets: [
+                        {
+                            label: 'Com Tráfego Pago',
+                            data: [100, 150, 220, 310, 390, 450],
+                            backgroundColor: 'rgba(109, 93, 252, 0.2)',
+                            borderColor: 'rgba(109, 93, 252, 1)',
+                            borderWidth: 2,
+                            tension: 0.3,
+                            fill: true
+                        },
+                        {
+                            label: 'Sem Tráfego Pago',
+                            data: [100, 110, 115, 120, 125, 130],
+                            borderColor: 'rgba(200, 200, 200, 1)',
+                            backgroundColor: 'rgba(200, 200, 200, 0.2)',
+                            borderWidth: 2,
+                            tension: 0.3,
+                            fill: true
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: 'rgba(200, 200, 200, 0.1)'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                        }
+                    }
+                }
+            });
+        });
+        
+        // Funções de transição entre páginas
+        function initPageTransitions() {
+            // Aplicar classe de transição a todas as seções
+            const sections = document.querySelectorAll('section');
+            sections.forEach((section, index) => {
+                section.style.setProperty('--section-index', index);
+            });
+
+            // Capturar todos os links de navegação internos
+            const internalLinks = document.querySelectorAll('a[href^="/"]:not([target]), a[href^="./"]:not([target]), a[href^="../"]:not([target]), a[href^="#"]:not([target])');
+            
+            internalLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Não aplicar a transição para links de âncora na mesma página
+                    if (this.getAttribute('href').startsWith('#')) {
+                        return;
+                    }
+                    
+                    // Prevenir o comportamento padrão
+                    e.preventDefault();
+                    
+                    const targetHref = this.getAttribute('href');
+                    
+                    // Adicionar classe de fade-out ao body
+                    document.body.classList.add('fade-out');
+                    
+                    // Após a transição, navegar para a página destino
+                    setTimeout(() => {
+                        window.location.href = targetHref;
+                    }, 300); // O mesmo tempo que a duração da transição CSS
+                });
+            });
+            
+            // Remover classe fade-out ao carregar a página
+            document.body.classList.remove('fade-out');
+        }
+    </script>
+</body>
+</html> 

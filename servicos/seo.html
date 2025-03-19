@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serviço de SEO (Search Engine Optimization) - Aumente sua visibilidade nos motores de busca e conquiste mais tráfego orgânico qualificado">
+    <meta name="keywords" content="SEO, Search Engine Optimization, otimização para motores de busca, tráfego orgânico, link building, palavras-chave, Google">
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>LP Engajar | SEO</title>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">LP Engajar</a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../index.html#servicos">Serviços</a></li>
+                <li><a href="../index.html#cases">Cases</a></li>
+                <li><a href="../index.html#faq">FAQ</a></li>
+                <li><a href="../index.html#contato" class="btn btn-primary">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da Página de Serviço -->
+    <header class="service-header">
+        <div class="container">
+            <div class="service-header-content">
+                <div class="service-icon-large">
+                    <img src="../public/images/icon-search.svg" alt="Ícone de SEO">
+                </div>
+                <h1>Otimização para Motores de Busca (SEO)</h1>
+                <p>Aumente a visibilidade do seu site nos resultados de pesquisa e gere tráfego orgânico qualificado</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Detalhes do Serviço -->
+    <section class="service-details">
+        <div class="container">
+            <div class="service-details-grid">
+                <div class="service-description">
+                    <h2>Como funciona o SEO</h2>
+                    <p>SEO (Search Engine Optimization) ou Otimização para Motores de Busca é um conjunto de estratégias que visam melhorar o posicionamento do seu site nos resultados de pesquisa orgânicos, aumentando a visibilidade da sua marca e gerando tráfego qualificado.</p>
+                    
+                    <p>Nossa abordagem é baseada em três pilares fundamentais:</p>
+                    
+                    <h3>Otimização On-page</h3>
+                    <p>Otimizamos todos os elementos dentro do seu site para que os motores de busca entendam melhor o seu conteúdo e o ranqueiem de forma mais eficiente para as palavras-chave relevantes.</p>
+                    
+                    <ul class="platforms-list">
+                        <li>
+                            <div class="platform-icon"></div>
+                            <div class="platform-info">
+                                <h4>Pesquisa de Palavras-chave</h4>
+                                <p>Identificamos as palavras-chave mais relevantes para o seu negócio e com maior potencial de conversão.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="platform-icon"></div>
+                            <div class="platform-info">
+                                <h4>Otimização de Conteúdo</h4>
+                                <p>Criamos e otimizamos textos, títulos, meta descrições e URLs para melhorar o posicionamento.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="platform-icon"></div>
+                            <div class="platform-info">
+                                <h4>Otimização Técnica</h4>
+                                <p>Melhoramos a estrutura do site, velocidade de carregamento, experiência mobile e indexação.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <h3>Otimização Off-page</h3>
+                    <p>Trabalhamos nos fatores externos ao seu site que influenciam seu posicionamento nos motores de busca.</p>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-link.svg" alt="Ícone de Link Building">
+                            </div>
+                            <h4>Link Building</h4>
+                            <p>Estratégias para obtenção de links de qualidade que apontam para o seu site.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-social.svg" alt="Ícone de Presença Social">
+                            </div>
+                            <h4>Presença Social</h4>
+                            <p>Fortalecimento da sua marca nas redes sociais e plataformas relevantes.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-authority.svg" alt="Ícone de Autoridade">
+                            </div>
+                            <h4>Autoridade</h4>
+                            <p>Construção da autoridade da sua marca no seu segmento de mercado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-chart-container">
+                    <h2>Impacto do SEO nos negócios</h2>
+                    
+                    <div class="chart-info">
+                        <div class="chart-stat">
+                            <h3>89%</h3>
+                            <p>dos consumidores iniciam o processo de compra com uma pesquisa no Google</p>
+                        </div>
+                        <div class="chart-stat">
+                            <h3>75%</h3>
+                            <p>dos usuários não passam da primeira página dos resultados</p>
+                        </div>
+                        <div class="chart-stat">
+                            <h3>14x</h3>
+                            <p>maior probabilidade de conversão do tráfego orgânico em relação ao pago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-wrapper">
+                        <canvas id="seoChart"></canvas>
+                    </div>
+                    
+                    <div class="testimonial-box">
+                        <div class="testimonial-content">
+                            <p>"Após 6 meses de trabalho com SEO, conseguimos aumentar o tráfego orgânico em 187% e as conversões via busca orgânica em 94%. O investimento em SEO foi o que trouxe o melhor ROI para nossa empresa em toda nossa história."</p>
+                            <div class="testimonial-author">
+                                <img src="../public/images/client-avatar.svg" alt="Avatar do Cliente">
+                                <div>
+                                    <h4>Marcos Oliveira</h4>
+                                    <p>CEO, TechSolutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Processo -->
+            <div class="process-section">
+                <h2>Nosso Processo de Trabalho</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Análise</h3>
+                        <p>Auditoria completa do site e identificação de oportunidades de melhoria.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Estratégia</h3>
+                        <p>Definição das palavras-chave e desenvolvimento do plano de ação.</p>
+                    </div>
+                    <div class="process-step process-step-active">
+                        <div class="step-number">3</div>
+                        <h3>Implementação</h3>
+                        <p>Execução das otimizações on-page e início das estratégias off-page.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Monitoramento</h3>
+                        <p>Acompanhamento dos resultados e ajustes na estratégia.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h3>Relatórios</h3>
+                        <p>Relatórios mensais detalhados com os resultados e próximos passos.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="cta-section">
+                <h2>Pronto para melhorar o posicionamento do seu site?</h2>
+                <p>Solicite uma análise gratuita e descubra as oportunidades de crescimento para o seu negócio com SEO.</p>
+                <ul class="contact-benefits">
+                    <li>
+                        <span class="check-icon"></span>
+                        <p>Análise completa do seu site atual</p>
+                    </li>
+                    <li>
+                        <span class="check-icon"></span>
+                        <p>Identificação de palavras-chave com potencial</p>
+                    </li>
+                    <li>
+                        <span class="check-icon"></span>
+                        <p>Avaliação da concorrência</p>
+                    </li>
+                </ul>
+                <a href="#contato-form" class="btn btn-primary btn-lg">Solicitar Análise Gratuita</a>
+            </div>
+            
+            <!-- Formulário de Contato -->
+            <div id="contato-form" class="contact-section">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-form-container">
+                            <h2>Entre em contato</h2>
+                            <p>Preencha o formulário abaixo e entraremos em contato em até 24 horas.</p>
+                            <form class="contact-form">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Nome completo" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="tel" placeholder="Telefone" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Empresa">
+                                </div>
+                                <div class="input-group">
+                                    <textarea placeholder="Mensagem" rows="4"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-full">Enviar mensagem</button>
+                            </form>
+                        </div>
+                        <div class="contact-info-container">
+                            <h3>Informações de contato</h3>
+                            <ul class="contact-info">
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <span>contato@lpengajar.com.br</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>(11) 9999-9999</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>São Paulo, SP</span>
+                                </li>
+                            </ul>
+                            <div class="social-media">
+                                <a href="#" target="_blank"><img src="../public/images/icon-instagram.svg" alt="Instagram"></a>
+                                <a href="#" target="_blank"><img src="../public/images/icon-facebook.svg" alt="Facebook"></a>
+                                <a href="#" target="_blank"><img src="../public/images/icon-whatsapp.svg" alt="WhatsApp"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="../index.html">LP Engajar</a>
+                    <p>Transformando visitas em resultados para o seu negócio.</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><img src="../public/images/icon-instagram.svg" alt="Instagram"></a>
+                        <a href="#" target="_blank"><img src="../public/images/icon-facebook.svg" alt="Facebook"></a>
+                        <a href="#" target="_blank"><img src="../public/images/icon-whatsapp.svg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../index.html#servicos">Serviços</a></li>
+                        <li><a href="../index.html#cases">Cases</a></li>
+                        <li><a href="../index.html#faq">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="trafego-pago.html">Tráfego Pago</a></li>
+                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="redes-sociais.html">Redes Sociais</a></li>
+                        <li><a href="analise-dados.html">Análise de Dados</a></li>
+                        <li><a href="email-marketing.html">Email Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo, SP</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@lpengajar.com.br</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2023 LP Engajar. Todos os direitos reservados.</p>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Executar quando o documento estiver pronto
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle mobile menu
+            document.querySelector('.nav-toggle').addEventListener('click', function() {
+                document.querySelector('.nav-menu').classList.toggle('active');
+                this.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on menu items
+            document.querySelectorAll('.nav-menu li a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    document.querySelector('.nav-menu').classList.remove('active');
+                    document.querySelector('.nav-toggle').classList.remove('active');
+                });
+            });
+            
+            // Inicializar transições de página
+            initPageTransitions();
+            
+            // Gráfico de crescimento do tráfego orgânico
+            const ctx = document.getElementById('seoChart').getContext('2d');
+            
+            const chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Mês 1', 'Mês 2', 'Mês 3', 'Mês 4', 'Mês 5', 'Mês 6'],
+                    datasets: [{
+                        label: 'Tráfego Orgânico',
+                        data: [100, 130, 190, 260, 380, 520],
+                        backgroundColor: 'rgba(109, 93, 252, 0.2)',
+                        borderColor: 'rgba(109, 93, 252, 1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        fill: true
+                    }, {
+                        label: 'Conversões',
+                        data: [20, 32, 45, 62, 84, 110],
+                        backgroundColor: 'rgba(3, 218, 198, 0.2)',
+                        borderColor: 'rgba(3, 218, 198, 1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: 'rgba(200, 200, 200, 0.1)'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                        }
+                    }
+                }
+            });
+        });
+        
+        // Funções de transição entre páginas
+        function initPageTransitions() {
+            // Aplicar classe de transição a todas as seções
+            const sections = document.querySelectorAll('section');
+            sections.forEach((section, index) => {
+                section.style.setProperty('--section-index', index);
+            });
+
+            // Capturar todos os links de navegação internos
+            const internalLinks = document.querySelectorAll('a[href^="/"]:not([target]), a[href^="./"]:not([target]), a[href^="../"]:not([target]), a[href^="#"]:not([target])');
+            
+            internalLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Não aplicar a transição para links de âncora na mesma página
+                    if (this.getAttribute('href').startsWith('#')) {
+                        return;
+                    }
+                    
+                    // Prevenir o comportamento padrão
+                    e.preventDefault();
+                    
+                    const targetHref = this.getAttribute('href');
+                    
+                    // Adicionar classe de fade-out ao body
+                    document.body.classList.add('fade-out');
+                    
+                    // Após a transição, navegar para a página destino
+                    setTimeout(() => {
+                        window.location.href = targetHref;
+                    }, 300); // O mesmo tempo que a duração da transição CSS
+                });
+            });
+            
+            // Remover classe fade-out ao carregar a página
+            document.body.classList.remove('fade-out');
+        }
+    </script>
+</body>
+</html> 

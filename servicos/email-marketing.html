@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serviço de Email Marketing - Estratégias personalizadas para nutrir leads, converter clientes e aumentar o retorno sobre investimento">
+    <meta name="keywords" content="email marketing, automação, newsletter, lead nurturing, segmentação, campanhas de email, taxa de abertura, conversão">
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>LP Engajar | Email Marketing</title>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">LP Engajar</a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../index.html#servicos">Serviços</a></li>
+                <li><a href="../index.html#cases">Cases</a></li>
+                <li><a href="../index.html#faq">FAQ</a></li>
+                <li><a href="../index.html#contato" class="btn btn-primary">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da Página de Serviço -->
+    <header class="service-header">
+        <div class="container">
+            <div class="service-header-content">
+                <div class="service-icon-large">
+                    <img src="../public/images/icon-email.svg" alt="Email Marketing">
+                </div>
+                <h1>Email Marketing</h1>
+                <p>Estratégias personalizadas para nutrir leads e aumentar suas vendas.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Detalhes do Serviço -->
+    <section class="service-details">
+        <div class="container">
+            <div class="service-details-grid">
+                <div class="service-description">
+                    <h2>Como funciona?</h2>
+                    <p>O Email Marketing é uma estratégia poderosa de marketing digital que consiste no envio de mensagens personalizadas e direcionadas para um público específico, com o objetivo de construir relacionamentos, engajar clientes e impulsionar vendas.</p>
+                    <p>Nossa equipe de especialistas desenvolve campanhas de email completas, desde a criação da estratégia até a análise dos resultados, sempre buscando maximizar as taxas de abertura, cliques e conversões.</p>
+                    
+                    <h3>Nossos serviços de Email Marketing</h3>
+                    <ul class="platforms-list">
+                        <li>
+                            <span class="platform-icon newsletter"></span>
+                            <div class="platform-info">
+                                <h4>Newsletters</h4>
+                                <p>Conteúdo relevante enviado periodicamente para manter sua marca na mente dos clientes e fortalecer o relacionamento.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="platform-icon automation"></span>
+                            <div class="platform-info">
+                                <h4>Automação de Email</h4>
+                                <p>Sequências inteligentes de emails disparados com base em ações específicas dos usuários para nutrir leads e aumentar conversões.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="platform-icon segmentation"></span>
+                            <div class="platform-info">
+                                <h4>Segmentação Avançada</h4>
+                                <p>Divisão estratégica da sua base de contatos para enviar mensagens personalizadas de acordo com interesses e comportamentos.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <h3>Benefícios</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-roi.svg" alt="ROI">
+                            </div>
+                            <h4>Alto ROI</h4>
+                            <p>Uma das estratégias de marketing digital com maior retorno sobre investimento, chegando a 4200% em média.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-personalization.svg" alt="Personalização">
+                            </div>
+                            <h4>Personalização</h4>
+                            <p>Mensagens altamente personalizadas que aumentam o engajamento e a fidelidade à marca.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-analytics.svg" alt="Métricas">
+                            </div>
+                            <h4>Métricas precisas</h4>
+                            <p>Acompanhamento detalhado de cada campanha, permitindo otimização contínua baseada em dados.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <img src="../public/images/icon-relationship.svg" alt="Relacionamento">
+                            </div>
+                            <h4>Construção de relacionamento</h4>
+                            <p>Desenvolvimento de confiança e autoridade com sua audiência através de comunicação consistente e valiosa.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-chart-container">
+                    <h2>Impacto do Email Marketing</h2>
+                    <p>Veja como nossas estratégias de Email Marketing impactam nos resultados dos nossos clientes:</p>
+                    
+                    <div class="chart-wrapper">
+                        <canvas id="conversionChart"></canvas>
+                    </div>
+                    
+                    <div class="chart-info">
+                        <div class="chart-stat">
+                            <h3>+45%</h3>
+                            <p>Aumento na taxa de abertura</p>
+                        </div>
+                        <div class="chart-stat">
+                            <h3>+60%</h3>
+                            <p>Aumento na taxa de cliques</p>
+                        </div>
+                        <div class="chart-stat">
+                            <h3>+120%</h3>
+                            <p>Aumento na taxa de conversão</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-box">
+                        <div class="testimonial-content">
+                            <p>"A estratégia de email marketing desenvolvida pela Engajar transformou completamente nosso funil de vendas. Conseguimos recuperar clientes inativos e aumentar significativamente as vendas recorrentes."</p>
+                            <div class="testimonial-author">
+                                <img src="../public/images/client-avatar-2.svg" alt="Cliente">
+                                <div>
+                                    <h4>Luciana Martins</h4>
+                                    <p>Loja de Produtos Naturais</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-section">
+                <h2>Nosso Processo</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Definição de objetivos</h3>
+                        <p>Identificação clara das metas a serem alcançadas com as campanhas de email marketing.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Segmentação da base</h3>
+                        <p>Divisão estratégica da sua lista de contatos para envio de mensagens relevantes e personalizadas.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Criação de conteúdo</h3>
+                        <p>Desenvolvimento de textos persuasivos e designs atrativos que estimulam a ação do usuário.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Testes A/B</h3>
+                        <p>Experimentação de diferentes assuntos, conteúdos e designs para identificar o que gera melhores resultados.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h3>Análise e otimização</h3>
+                        <p>Avaliação detalhada dos resultados e implementação de melhorias contínuas nas campanhas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="service-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para potencializar seus resultados com Email Marketing?</h2>
+                <p>Solicite uma análise gratuita da sua estratégia atual de email marketing e descubra como podemos ajudar sua empresa a crescer.</p>
+                <a href="#contato" class="btn btn-primary btn-lg">Solicitar análise gratuita</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <h2>Entre em contato</h2>
+                    <p>Preencha o formulário abaixo e entraremos em contato em até 24 horas.</p>
+                    <form class="contact-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="Nome completo" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" placeholder="Telefone" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="Empresa">
+                        </div>
+                        <div class="input-group">
+                            <textarea placeholder="Mensagem" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar mensagem</button>
+                    </form>
+                </div>
+                <div class="contact-info-container">
+                    <h3>Informações de contato</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@lpengajar.com.br</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 9999-9999</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>São Paulo, SP</span>
+                        </li>
+                    </ul>
+                    <div class="social-media">
+                        <a href="#" target="_blank"><img src="../public/images/icon-instagram.svg" alt="Instagram"></a>
+                        <a href="#" target="_blank"><img src="../public/images/icon-facebook.svg" alt="Facebook"></a>
+                        <a href="#" target="_blank"><img src="../public/images/icon-whatsapp.svg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="../index.html">LP Engajar</a>
+                    <p>Transformando visitas em resultados para o seu negócio.</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><img src="../public/images/icon-instagram.svg" alt="Instagram"></a>
+                        <a href="#" target="_blank"><img src="../public/images/icon-facebook.svg" alt="Facebook"></a>
+                        <a href="#" target="_blank"><img src="../public/images/icon-whatsapp.svg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../index.html#servicos">Serviços</a></li>
+                        <li><a href="../index.html#cases">Cases</a></li>
+                        <li><a href="../index.html#faq">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="trafego-pago.html">Tráfego Pago</a></li>
+                        <li><a href="redes-sociais.html">Redes Sociais</a></li>
+                        <li><a href="analise-dados.html">Análise de Dados</a></li>
+                        <li><a href="email-marketing.html">Email Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo, SP</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@lpengajar.com.br</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2023 LP Engajar. Todos os direitos reservados.</p>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Executar quando o documento estiver pronto
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle mobile menu
+            document.querySelector('.nav-toggle').addEventListener('click', function() {
+                document.querySelector('.nav-menu').classList.toggle('active');
+                this.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on menu items
+            document.querySelectorAll('.nav-menu li a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    document.querySelector('.nav-menu').classList.remove('active');
+                    document.querySelector('.nav-toggle').classList.remove('active');
+                });
+            });
+            
+            // Inicializar transições de página
+            initPageTransitions();
+        });
+        
+        // Funções de transição entre páginas
+        function initPageTransitions() {
+            // Aplicar classe de transição a todas as seções
+            const sections = document.querySelectorAll('section');
+            sections.forEach((section, index) => {
+                section.style.setProperty('--section-index', index);
+            });
+
+            // Capturar todos os links de navegação internos
+            const internalLinks = document.querySelectorAll('a[href^="/"]:not([target]), a[href^="./"]:not([target]), a[href^="../"]:not([target]), a[href^="#"]:not([target])');
+            
+            internalLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Não aplicar a transição para links de âncora na mesma página
+                    if (this.getAttribute('href').startsWith('#')) {
+                        return;
+                    }
+                    
+                    // Prevenir o comportamento padrão
+                    e.preventDefault();
+                    
+                    const targetHref = this.getAttribute('href');
+                    
+                    // Adicionar classe de fade-out ao body
+                    document.body.classList.add('fade-out');
+                    
+                    // Após a transição, navegar para a página destino
+                    setTimeout(() => {
+                        window.location.href = targetHref;
+                    }, 300); // O mesmo tempo que a duração da transição CSS
+                });
+            });
+            
+            // Remover classe fade-out ao carregar a página
+            document.body.classList.remove('fade-out');
+        }
+
+        // Gráfico de conversão
+        document.addEventListener('DOMContentLoaded', function() {
+            var ctx = document.getElementById('conversionChart').getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+                    datasets: [
+                        {
+                            label: 'Taxa de Abertura',
+                            backgroundColor: 'rgba(3, 218, 198, 0.1)',
+                            borderColor: 'rgba(3, 218, 198, 1)',
+                            data: [15, 20, 25, 30, 35, 42],
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Taxa de Conversão',
+                            backgroundColor: 'rgba(111, 66, 193, 0.1)',
+                            borderColor: 'rgba(111, 66, 193, 1)',
+                            data: [2, 3, 4, 5, 7, 9],
+                            tension: 0.4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

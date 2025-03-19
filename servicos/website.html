@@ -1,0 +1,58 @@
+    <script>
+        // Executar quando o documento estiver pronto
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle mobile menu
+            document.querySelector('.nav-toggle').addEventListener('click', function() {
+                document.querySelector('.nav-menu').classList.toggle('active');
+                this.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on menu items
+            document.querySelectorAll('.nav-menu li a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    document.querySelector('.nav-menu').classList.remove('active');
+                    document.querySelector('.nav-toggle').classList.remove('active');
+                });
+            });
+            
+            // Inicializar transições de página
+            initPageTransitions();
+        });
+        
+        // Funções de transição entre páginas
+        function initPageTransitions() {
+            // Aplicar classe de transição a todas as seções
+            const sections = document.querySelectorAll('section');
+            sections.forEach((section, index) => {
+                section.style.setProperty('--section-index', index);
+            });
+
+            // Capturar todos os links de navegação internos
+            const internalLinks = document.querySelectorAll('a[href^="/"]:not([target]), a[href^="./"]:not([target]), a[href^="../"]:not([target]), a[href^="#"]:not([target])');
+            
+            internalLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Não aplicar a transição para links de âncora na mesma página
+                    if (this.getAttribute('href').startsWith('#')) {
+                        return;
+                    }
+                    
+                    // Prevenir o comportamento padrão
+                    e.preventDefault();
+                    
+                    const targetHref = this.getAttribute('href');
+                    
+                    // Adicionar classe de fade-out ao body
+                    document.body.classList.add('fade-out');
+                    
+                    // Após a transição, navegar para a página destino
+                    setTimeout(() => {
+                        window.location.href = targetHref;
+                    }, 300); // O mesmo tempo que a duração da transição CSS
+                });
+            });
+            
+            // Remover classe fade-out ao carregar a página
+            document.body.classList.remove('fade-out');
+        }
+    </script> 

@@ -1,0 +1,147 @@
+// Função para configurar o carrossel
+            const setupCarousel = () => {
+                // Sempre mostrar 3 slides com espaçamento mínimo
+                let slideCount = 3;
+                
+                // Calcular a largura dos slides com margens mínimas
+                const trackWidth = track.getBoundingClientRect().width;
+                const slideWidth = (trackWidth / slideCount) - 2; // Margens mínimas
+                
+                // Configurar a largura e posição dos slides
+                slides.forEach((slide, index) => {
+                    slide.style.width = `${slideWidth}px`;
+                    // Espaçamento mínimo entre slides
+                    slide.style.left = `${(slideWidth + 1) * index}px`;
+                });
+                
+                // Mover para o slide atual
+                moveToSlide(currentSlide);
+            };
+
+// Executar quando o documento estiver pronto
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle mobile menu
+            document.querySelector('.nav-toggle').addEventListener('click', function() {
+                document.querySelector('.nav-menu').classList.toggle('active');
+                this.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on menu items
+            document.querySelectorAll('.nav-menu li a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    document.querySelector('.nav-menu').classList.remove('active');
+                    document.querySelector('.nav-toggle').classList.remove('active');
+                });
+            });
+
+            // Carousel de serviços
+            const track = document.querySelector('.carousel-track');
+            const slides = Array.from(track.children);
+            const nextButton = document.querySelector('.carousel-next');
+            const prevButton = document.querySelector('.carousel-prev');
+            const dotsNav = document.querySelector('.carousel-dots');
+            const dots = Array.from(dotsNav.children);
+            
+            let currentSlide = 0;
+            
+            // Função para configurar o carrossel
+            const setupCarousel = () => {
+                // Sempre mostrar 3 slides com espaçamento mínimo
+                let slideCount = 3;
+                
+                // Calcular a largura dos slides com margens mínimas
+                const trackWidth = track.getBoundingClientRect().width;
+                const slideWidth = (trackWidth / slideCount) - 2; // Margens mínimas
+                
+                // Configurar a largura e posição dos slides
+                slides.forEach((slide, index) => {
+                    slide.style.width = `${slideWidth}px`;
+                    // Espaçamento mínimo entre slides
+                    slide.style.left = `${(slideWidth + 1) * index}px`;
+                });
+                
+                // Mover para o slide atual
+                moveToSlide(currentSlide);
+            };
+            
+            // Garantir que o carrossel seja inicializado corretamente mesmo com imagens
+            window.addEventListener('load', setupCarousel);
+            
+            // Executar setupCarousel após um breve atraso para garantir que os elementos tenham suas dimensões finais
+            setTimeout(setupCarousel, 100);
+            
+            const moveToSlide = (currentIndex) => {
+                // Calcular a posição para o slide atual
+                const targetSlide = slides[currentIndex];
+                const targetLeft = targetSlide.style.left;
+                
+                // Mover o track para mostrar o slide atual
+                track.style.transform = `translateX(-${targetLeft})`;
+                
+                // Atualizar os indicadores (dots)
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[currentIndex].classList.add('active');
+                
+                // Atualizar o índice atual
+                currentSlide = currentIndex;
+            };
+            
+            // Próximo slide
+            nextButton.addEventListener('click', () => {
+                if (currentSlide === slides.length - 1) {
+                    moveToSlide(0);
+                } else {
+                    moveToSlide(currentSlide + 1);
+                }
+            });
+            
+            // Slide anterior
+            prevButton.addEventListener('click', () => {
+                if (currentSlide === 0) {
+                    moveToSlide(slides.length - 1);
+                } else {
+                    moveToSlide(currentSlide - 1);
+                }
+            });
+            
+            // Navegação por dots
+            dotsNav.addEventListener('click', (e) => {
+                const targetDot = e.target.closest('span');
+                if (!targetDot) return;
+                
+                const targetIndex = dots.findIndex(dot => dot === targetDot);
+                moveToSlide(targetIndex);
+            });
+            
+            // Configurar o carrossel inicialmente e ao redimensionar a janela
+            window.addEventListener('resize', setupCarousel);
+            
+            // Auto rolagem do carrossel
+            let autoSlideInterval;
+            
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(() => {
+                    if (currentSlide === slides.length - 1) {
+                        moveToSlide(0);
+                    } else {
+                        moveToSlide(currentSlide + 1);
+                    }
+                }, 5000); // Mudar a cada 5 segundos
+            }
+            
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+            
+            // Iniciar a auto rolagem
+            startAutoSlide();
+            
+            // Parar a auto rolagem quando o mouse estiver sobre o carrossel
+            document.querySelector('.services-carousel').addEventListener('mouseenter', stopAutoSlide);
+            document.querySelector('.services-carousel').addEventListener('mouseleave', startAutoSlide);
+            
+            // Parar a auto rolagem quando o usuário clicar nos controles
+            nextButton.addEventListener('mousedown', stopAutoSlide);
+            prevButton.addEventListener('mousedown', stopAutoSlide);
+            dotsNav.addEventListener('mousedown', stopAutoSlide);
+        });
